@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		324B8E6A1ADBBDB000448558 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324B8E691ADBBDB000448558 /* Foundation.framework */; };
+		324B8E6C1ADBBDB000448558 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324B8E6B1ADBBDB000448558 /* CoreGraphics.framework */; };
+		324B8E6E1ADBBDB000448558 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324B8E6D1ADBBDB000448558 /* UIKit.framework */; };
+		324B8E741ADBBDB000448558 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 324B8E721ADBBDB000448558 /* InfoPlist.strings */; };
+		324B8E761ADBBDB000448558 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 324B8E751ADBBDB000448558 /* main.m */; };
+		324B8E7A1ADBBDB000448558 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 324B8E791ADBBDB000448558 /* AppDelegate.m */; };
+		324B8E7D1ADBBDB000448558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324B8E7B1ADBBDB000448558 /* Main.storyboard */; };
+		324B8E801ADBBDB000448558 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324B8E7F1ADBBDB000448558 /* ViewController.m */; };
+		324B8E821ADBBDB000448558 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324B8E811ADBBDB000448558 /* Images.xcassets */; };
+		324B8E891ADBBDB000448558 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324B8E881ADBBDB000448558 /* XCTest.framework */; };
+		324B8E8A1ADBBDB000448558 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324B8E691ADBBDB000448558 /* Foundation.framework */; };
+		324B8E8B1ADBBDB000448558 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324B8E6D1ADBBDB000448558 /* UIKit.framework */; };
+		324B8E931ADBBDB000448558 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 324B8E911ADBBDB000448558 /* InfoPlist.strings */; };
+		324B8E951ADBBDB000448558 /* _3_CoreData_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324B8E941ADBBDB000448558 /* _3_CoreData_____Tests.m */; };
+		324B8EA01ADBBDD900448558 /* Company.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 324B8E9E1ADBBDD900448558 /* Company.xcdatamodeld */; };
+		327BE0DF1ADCE93C00745D55 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 327BE0DE1ADCE93C00745D55 /* Person.m */; };
+		329BE0681ADCBF0A00C2F113 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329BE0671ADCBF0A00C2F113 /* CoreData.framework */; };
+		32F186AC1ADDFD0600A76F9A /* Weibo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32F186AA1ADDFD0600A76F9A /* Weibo.xcdatamodeld */; };
+		32F186AF1ADDFEEC00A76F9A /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F186AE1ADDFEEC00A76F9A /* Department.m */; };
+		32F186B21ADDFF9700A76F9A /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F186B11ADDFF9700A76F9A /* Employee.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		324B8E8C1ADBBDB000448558 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 324B8E5E1ADBBDB000448558 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324B8E651ADBBDB000448558;
+			remoteInfo = "03-CoreData的简单使用";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		324B8E661ADBBDB000448558 /* 03-CoreData的简单使用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-CoreData的简单使用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		324B8E691ADBBDB000448558 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		324B8E6B1ADBBDB000448558 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		324B8E6D1ADBBDB000448558 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		324B8E711ADBBDB000448558 /* 03-CoreData的简单使用-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "03-CoreData的简单使用-Info.plist"; sourceTree = "<group>"; };
+		324B8E731ADBBDB000448558 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		324B8E751ADBBDB000448558 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		324B8E771ADBBDB000448558 /* 03-CoreData的简单使用-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "03-CoreData的简单使用-Prefix.pch"; sourceTree = "<group>"; };
+		324B8E781ADBBDB000448558 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		324B8E791ADBBDB000448558 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		324B8E7C1ADBBDB000448558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		324B8E7E1ADBBDB000448558 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		324B8E7F1ADBBDB000448558 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		324B8E811ADBBDB000448558 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		324B8E871ADBBDB000448558 /* 03-CoreData的简单使用Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "03-CoreData的简单使用Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		324B8E881ADBBDB000448558 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		324B8E901ADBBDB000448558 /* 03-CoreData的简单使用Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "03-CoreData的简单使用Tests-Info.plist"; sourceTree = "<group>"; };
+		324B8E921ADBBDB000448558 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		324B8E941ADBBDB000448558 /* _3_CoreData_____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_3_CoreData_____Tests.m"; sourceTree = "<group>"; };
+		324B8E9F1ADBBDD900448558 /* Company.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Company.xcdatamodel; sourceTree = "<group>"; };
+		327BE0DD1ADCE93C00745D55 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		327BE0DE1ADCE93C00745D55 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		329BE0671ADCBF0A00C2F113 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		32F186AB1ADDFD0600A76F9A /* Weibo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Weibo.xcdatamodel; sourceTree = "<group>"; };
+		32F186AD1ADDFEEC00A76F9A /* Department.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
+		32F186AE1ADDFEEC00A76F9A /* Department.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
+		32F186B01ADDFF9700A76F9A /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		32F186B11ADDFF9700A76F9A /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		324B8E631ADBBDB000448558 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				329BE0681ADCBF0A00C2F113 /* CoreData.framework in Frameworks */,
+				324B8E6C1ADBBDB000448558 /* CoreGraphics.framework in Frameworks */,
+				324B8E6E1ADBBDB000448558 /* UIKit.framework in Frameworks */,
+				324B8E6A1ADBBDB000448558 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		324B8E841ADBBDB000448558 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324B8E891ADBBDB000448558 /* XCTest.framework in Frameworks */,
+				324B8E8B1ADBBDB000448558 /* UIKit.framework in Frameworks */,
+				324B8E8A1ADBBDB000448558 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		324B8E5D1ADBBDB000448558 = {
+			isa = PBXGroup;
+			children = (
+				324B8E6F1ADBBDB000448558 /* 03-CoreData的简单使用 */,
+				324B8E8E1ADBBDB000448558 /* 03-CoreData的简单使用Tests */,
+				324B8E681ADBBDB000448558 /* Frameworks */,
+				324B8E671ADBBDB000448558 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		324B8E671ADBBDB000448558 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				324B8E661ADBBDB000448558 /* 03-CoreData的简单使用.app */,
+				324B8E871ADBBDB000448558 /* 03-CoreData的简单使用Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		324B8E681ADBBDB000448558 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				329BE0671ADCBF0A00C2F113 /* CoreData.framework */,
+				324B8E691ADBBDB000448558 /* Foundation.framework */,
+				324B8E6B1ADBBDB000448558 /* CoreGraphics.framework */,
+				324B8E6D1ADBBDB000448558 /* UIKit.framework */,
+				324B8E881ADBBDB000448558 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		324B8E6F1ADBBDB000448558 /* 03-CoreData的简单使用 */ = {
+			isa = PBXGroup;
+			children = (
+				324B8E781ADBBDB000448558 /* AppDelegate.h */,
+				324B8E791ADBBDB000448558 /* AppDelegate.m */,
+				324B8E7B1ADBBDB000448558 /* Main.storyboard */,
+				324B8E7E1ADBBDB000448558 /* ViewController.h */,
+				324B8E7F1ADBBDB000448558 /* ViewController.m */,
+				324B8E811ADBBDB000448558 /* Images.xcassets */,
+				324B8E701ADBBDB000448558 /* Supporting Files */,
+				324B8E9E1ADBBDD900448558 /* Company.xcdatamodeld */,
+				32F186AA1ADDFD0600A76F9A /* Weibo.xcdatamodeld */,
+				327BE0DD1ADCE93C00745D55 /* Person.h */,
+				327BE0DE1ADCE93C00745D55 /* Person.m */,
+				32F186AD1ADDFEEC00A76F9A /* Department.h */,
+				32F186AE1ADDFEEC00A76F9A /* Department.m */,
+				32F186B01ADDFF9700A76F9A /* Employee.h */,
+				32F186B11ADDFF9700A76F9A /* Employee.m */,
+			);
+			path = "03-CoreData的简单使用";
+			sourceTree = "<group>";
+		};
+		324B8E701ADBBDB000448558 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				324B8E711ADBBDB000448558 /* 03-CoreData的简单使用-Info.plist */,
+				324B8E721ADBBDB000448558 /* InfoPlist.strings */,
+				324B8E751ADBBDB000448558 /* main.m */,
+				324B8E771ADBBDB000448558 /* 03-CoreData的简单使用-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		324B8E8E1ADBBDB000448558 /* 03-CoreData的简单使用Tests */ = {
+			isa = PBXGroup;
+			children = (
+				324B8E941ADBBDB000448558 /* _3_CoreData_____Tests.m */,
+				324B8E8F1ADBBDB000448558 /* Supporting Files */,
+			);
+			path = "03-CoreData的简单使用Tests";
+			sourceTree = "<group>";
+		};
+		324B8E8F1ADBBDB000448558 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				324B8E901ADBBDB000448558 /* 03-CoreData的简单使用Tests-Info.plist */,
+				324B8E911ADBBDB000448558 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		324B8E651ADBBDB000448558 /* 03-CoreData的简单使用 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 324B8E981ADBBDB000448558 /* Build configuration list for PBXNativeTarget "03-CoreData的简单使用" */;
+			buildPhases = (
+				324B8E621ADBBDB000448558 /* Sources */,
+				324B8E631ADBBDB000448558 /* Frameworks */,
+				324B8E641ADBBDB000448558 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03-CoreData的简单使用";
+			productName = "03-CoreData的简单使用";
+			productReference = 324B8E661ADBBDB000448558 /* 03-CoreData的简单使用.app */;
+			productType = "com.apple.product-type.application";
+		};
+		324B8E861ADBBDB000448558 /* 03-CoreData的简单使用Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 324B8E9B1ADBBDB000448558 /* Build configuration list for PBXNativeTarget "03-CoreData的简单使用Tests" */;
+			buildPhases = (
+				324B8E831ADBBDB000448558 /* Sources */,
+				324B8E841ADBBDB000448558 /* Frameworks */,
+				324B8E851ADBBDB000448558 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				324B8E8D1ADBBDB000448558 /* PBXTargetDependency */,
+			);
+			name = "03-CoreData的简单使用Tests";
+			productName = "03-CoreData的简单使用Tests";
+			productReference = 324B8E871ADBBDB000448558 /* 03-CoreData的简单使用Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		324B8E5E1ADBBDB000448558 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = yake;
+				TargetAttributes = {
+					324B8E861ADBBDB000448558 = {
+						TestTargetID = 324B8E651ADBBDB000448558;
+					};
+				};
+			};
+			buildConfigurationList = 324B8E611ADBBDB000448558 /* Build configuration list for PBXProject "03-CoreData的简单使用" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 324B8E5D1ADBBDB000448558;
+			productRefGroup = 324B8E671ADBBDB000448558 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				324B8E651ADBBDB000448558 /* 03-CoreData的简单使用 */,
+				324B8E861ADBBDB000448558 /* 03-CoreData的简单使用Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		324B8E641ADBBDB000448558 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324B8E821ADBBDB000448558 /* Images.xcassets in Resources */,
+				324B8E741ADBBDB000448558 /* InfoPlist.strings in Resources */,
+				324B8E7D1ADBBDB000448558 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		324B8E851ADBBDB000448558 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324B8E931ADBBDB000448558 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		324B8E621ADBBDB000448558 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327BE0DF1ADCE93C00745D55 /* Person.m in Sources */,
+				324B8E801ADBBDB000448558 /* ViewController.m in Sources */,
+				32F186AF1ADDFEEC00A76F9A /* Department.m in Sources */,
+				324B8E7A1ADBBDB000448558 /* AppDelegate.m in Sources */,
+				324B8E761ADBBDB000448558 /* main.m in Sources */,
+				32F186B21ADDFF9700A76F9A /* Employee.m in Sources */,
+				32F186AC1ADDFD0600A76F9A /* Weibo.xcdatamodeld in Sources */,
+				324B8EA01ADBBDD900448558 /* Company.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		324B8E831ADBBDB000448558 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324B8E951ADBBDB000448558 /* _3_CoreData_____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		324B8E8D1ADBBDB000448558 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324B8E651ADBBDB000448558 /* 03-CoreData的简单使用 */;
+			targetProxy = 324B8E8C1ADBBDB000448558 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		324B8E721ADBBDB000448558 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				324B8E731ADBBDB000448558 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		324B8E7B1ADBBDB000448558 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				324B8E7C1ADBBDB000448558 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		324B8E911ADBBDB000448558 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				324B8E921ADBBDB000448558 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		324B8E961ADBBDB000448558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		324B8E971ADBBDB000448558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		324B8E991ADBBDB000448558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "03-CoreData的简单使用/03-CoreData的简单使用-Prefix.pch";
+				INFOPLIST_FILE = "03-CoreData的简单使用/03-CoreData的简单使用-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		324B8E9A1ADBBDB000448558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "03-CoreData的简单使用/03-CoreData的简单使用-Prefix.pch";
+				INFOPLIST_FILE = "03-CoreData的简单使用/03-CoreData的简单使用-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		324B8E9C1ADBBDB000448558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/03-CoreData的简单使用.app/03-CoreData的简单使用";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "03-CoreData的简单使用/03-CoreData的简单使用-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "03-CoreData的简单使用Tests/03-CoreData的简单使用Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		324B8E9D1ADBBDB000448558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/03-CoreData的简单使用.app/03-CoreData的简单使用";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "03-CoreData的简单使用/03-CoreData的简单使用-Prefix.pch";
+				INFOPLIST_FILE = "03-CoreData的简单使用Tests/03-CoreData的简单使用Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		324B8E611ADBBDB000448558 /* Build configuration list for PBXProject "03-CoreData的简单使用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324B8E961ADBBDB000448558 /* Debug */,
+				324B8E971ADBBDB000448558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		324B8E981ADBBDB000448558 /* Build configuration list for PBXNativeTarget "03-CoreData的简单使用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324B8E991ADBBDB000448558 /* Debug */,
+				324B8E9A1ADBBDB000448558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		324B8E9B1ADBBDB000448558 /* Build configuration list for PBXNativeTarget "03-CoreData的简单使用Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324B8E9C1ADBBDB000448558 /* Debug */,
+				324B8E9D1ADBBDB000448558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		324B8E9E1ADBBDD900448558 /* Company.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				324B8E9F1ADBBDD900448558 /* Company.xcdatamodel */,
+			);
+			currentVersion = 324B8E9F1ADBBDD900448558 /* Company.xcdatamodel */;
+			path = Company.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		32F186AA1ADDFD0600A76F9A /* Weibo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				32F186AB1ADDFD0600A76F9A /* Weibo.xcdatamodel */,
+			);
+			currentVersion = 32F186AB1ADDFD0600A76F9A /* Weibo.xcdatamodel */;
+			path = Weibo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 324B8E5E1ADBBDB000448558 /* Project object */;
+}
