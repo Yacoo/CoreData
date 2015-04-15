@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <CoreData/CoreData.h>
 #import "Employee.h"
+#import "Department.h"
 
 @interface ViewController ()
 {
@@ -23,6 +24,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    [self initContext];
+    
+}
+- (void)initContext
+{
     //使用CoreData保存数据
     
     //1.初始化上下文
@@ -52,27 +58,26 @@
     
     _context.persistentStoreCoordinator = store;
 }
-
 - (IBAction)addEmployee:(id)sender {
-    //添加员工
-    //1.创建一个员工对象
-//    用coredata创建对象不能使用下面方法
-//    Employee * emp = [[Employee alloc] init];
-    
-   
-        Employee * emp = [NSEntityDescription insertNewObjectForEntityForName:@"Employee" inManagedObjectContext:_context];
-        
-        emp.name = @"wangwu";
-        emp.height = @(1.5);
-        emp.createDate = [NSDate date];
-        
-        //保存员工信息
-        NSError * error = nil;
-        [_context save:&error];
-        
-        if(error){
-            NSLog(@"%@",error);
-        }
+//    //添加员工
+//    //1.创建一个员工对象
+////    用coredata创建对象不能使用下面方法
+////    Employee * emp = [[Employee alloc] init];
+//    
+//   
+//        Employee * emp = [NSEntityDescription insertNewObjectForEntityForName:@"Employee" inManagedObjectContext:_context];
+//        
+//        emp.name = @"wangwu";
+//        emp.height = @(1.5);
+//        emp.createDate = [NSDate date];
+//        
+//        //保存员工信息
+//        NSError * error = nil;
+//        [_context save:&error];
+//        
+//        if(error){
+//            NSLog(@"%@",error);
+//        }
     
     
 
@@ -96,6 +101,33 @@
 //    }
     
     
+    
+    //1.创建部门
+   Department * iOSDepartment = [NSEntityDescription insertNewObjectForEntityForName:@"Department" inManagedObjectContext:_context];
+    iOSDepartment.departNo = @"ITCAST_008";
+    iOSDepartment.name = @"ios";
+    
+    //2.员工
+    Employee * emp1 = [NSEntityDescription insertNewObjectForEntityForName:@"Employee" inManagedObjectContext:_context];
+    emp1.name = @"zhangsan";
+    emp1.height = @(1.90);
+    emp1.createDate = [NSDate date];
+    emp1.depart = iOSDepartment;
+    
+    
+    Department * javaDepartment = [NSEntityDescription insertNewObjectForEntityForName:@"Department" inManagedObjectContext:_context];
+    javaDepartment.departNo = @"ITCAST_001";
+    javaDepartment.name = @"java";
+    
+    //员工
+    Employee * emp2 = [NSEntityDescription insertNewObjectForEntityForName:@"Employee" inManagedObjectContext:_context];
+    emp2.name = @"lisi";
+    emp2.height = @(1.80);
+    emp2.createDate = [NSDate date];
+    emp2.depart = javaDepartment;
+    
+    //保存数据
+    [_context save:nil];
 }
 #pragma mark -- 查找员工信息
 - (IBAction)findEmployee:(id)sender {
@@ -107,13 +139,13 @@
     NSSortDescriptor * dateSort = [NSSortDescriptor sortDescriptorWithKey:@"createDate" ascending:YES]; //yes代表升序，no代表降序
     request.sortDescriptors = @[dateSort];
     
-//    //过滤条件 只想查找 zhangsan8
-//    NSPredicate * pre = [NSPredicate predicateWithFormat:@"name = %@",@"zhangsan8"];
-//    request.predicate = pre;
+//    //过滤条件 查找名为zhangsan并且部门是属于ios
+    NSPredicate * pre = [NSPredicate predicateWithFormat:@"name = %@ AND depart.name = %@",@"zhangsan",@"java"];
+    request.predicate = pre;
     
-    //分页语句 10 两页 （0，5），（5，10）
-    request.fetchOffset = 5;
-    request.fetchLimit = 4;
+//    //分页语句 10 两页 （0，5），（5，10）
+//    request.fetchOffset = 5;
+//    request.fetchLimit = 4;
     
     
     //执行请求
@@ -121,6 +153,9 @@
    NSArray * allEmployees = [_context executeFetchRequest:request error:&error];
     if(error){
         NSLog(@"%@",error);
+    }
+    if(allEmployees.count == 0){
+        NSLog(@"没有查找到数据");
     }
   //  NSLog(@"allEmployee = %@",allEmployees);
     for(Employee * emp in allEmployees){
@@ -205,9 +240,7 @@
     //模糊查询
     NSPredicate * pre = [NSPredicate predicateWithFormat:@"name like[c] %@",@"li*"];
     request.predicate = pre;
-    
-    
-    
+
     
     //执行请求
     NSError * error = nil;
